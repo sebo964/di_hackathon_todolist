@@ -33,6 +33,7 @@ section.landing_pg {
     background-image: url("logo.png");
     background-position: center;
     background-size: cover;
+    display: flex;
 }
 
 ul {

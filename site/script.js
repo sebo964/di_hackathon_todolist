@@ -1,15 +1,8 @@
 // to do list app
 
+let tasks=[];  // list of items will be contained in this array 
 
-
-const tasks=[];  // list of items will be contained in this array 
-
-// document.createElement('span').attributes
-// document.getElementById('f2').appendChild() 
-
-// const form = document.getElementById('f1');
-// console.log(form);
-// form.addEventListener('submit',addTask); 
+let taskcompleted=[]; // list of completed tasks will be contained in this array
 
 const addtaskbtn = document.getElementById('addtasksubmitbtn');
 addtaskbtn.addEventListener('click',addTask);
@@ -25,7 +18,8 @@ let taskadded = document.querySelector('input')
 //  the user input is not empty then add the task to the array and add the task to the DOM
     if (taskadded.value!== "") {
         tasks.push(taskadded.value);
-        const item = document.createElement("p");
+        const item = document.createElement("p")
+        item.setAttribute("id", "p");
         document.getElementById('listTasks').appendChild(item);
 
         // adds a check box to the task on the left side
@@ -36,12 +30,14 @@ let taskadded = document.querySelector('input')
 
         // when the checkbox is clicked the span text will be striked
         tick.addEventListener("click", () => {
+
             if (tick.checked) {
                 span.style.textDecoration = "line-through";
-
+                taskcompleted.push(taskadded.value);
             }
             else {
                 span.style.textDecoration = "none";
+                taskcompleted.pop(taskadded.value);
             }
         })  
 
@@ -69,3 +65,4 @@ let taskadded = document.querySelector('input')
     }
 }
 
+console.log(tasks)
