@@ -1,6 +1,11 @@
 // to do list app
 
+
+
 const tasks=[];  // list of items will be contained in this array 
+
+// document.createElement('span').attributes
+// document.getElementById('f2').appendChild() 
 
 // const form = document.getElementById('f1');
 // console.log(form);
@@ -21,7 +26,7 @@ let taskadded = document.querySelector('input')
     if (taskadded.value!== "") {
         tasks.push(taskadded.value);
         const item = document.createElement("p");
-        document.querySelector('div').appendChild(item);
+        document.getElementById('listTasks').appendChild(item);
 
         // adds a check box to the task on the left side
         const tick = document.createElement("input");
@@ -33,6 +38,7 @@ let taskadded = document.querySelector('input')
         tick.addEventListener("click", () => {
             if (tick.checked) {
                 span.style.textDecoration = "line-through";
+
             }
             else {
                 span.style.textDecoration = "none";
@@ -56,12 +62,10 @@ let taskadded = document.querySelector('input')
         // when the delete button is clicked the task is deleted from the dom
 
         del.addEventListener("click", () =>
-        document.querySelector('div').removeChild(li));
+        document.getElementById('listTasks').removeChild(item));
     }
     else {
         alert("task was not found");
     }
 }
-
-
 
