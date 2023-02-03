@@ -5,21 +5,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/bba3432f3f.js"
+        crossorigin="anonymous"></script>
     <title>To Do List</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-<nav>This is for the navbar</nav>    
+    <nav>This is for the navbar</nav>    
 
     <form id="f1">
         <label for="task">Add a task</label>
         <input title='todoinput' type="text" id="task"></input>
-        <button type="submit">Submit</button>
+        <button type="submit" id="addtasksubmitbtn">Submit</button>
     </form>
     <Form id="f2">
     <div class="listTasks"></div>
+
+            <div class="side-nav">
+            <a href="#" class="logo">
+                 <img src="./logo.png " class="logo-img">
+                <ul class="nav-links"></ul>
+            </a>
+
+            <li><a href="#">
+                <i class="fa-solid fa-house-user"></i>
+                <p>Home</p>
+            </a>
+            </li>
+
+            <li><a href="#">
+                <i class="fa-solid fa-house-user"></i>
+                <p>Contacts</p>
+
+            </a>
+            </li>
+
+            <li><a href="#">
+                <i class="fa-solid fa-house-user"></i>
+                <p>About us</p>
+            </a>
+            </li>
+            </div>
+
+            <div class="active"></div>
+        
+    </div>
     
+    >
+
+
+
     <script src="./script.js"></script>
 </body>
 
