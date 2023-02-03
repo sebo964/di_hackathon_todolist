@@ -1,10 +1,9 @@
 // to do list app
 
-const tasks=[];  // list of items will be contained in this array 
+let tasks=[];  // list of items will be contained in this array 
 
-// const form = document.getElementById('f1');
-// console.log(form);
-// form.addEventListener('submit',addTask); 
+let completedtasks=[]; // list of completed tasks will be contained in this array
+console.log(tasks);
 
 const addtaskbtn = document.getElementById('addtasksubmitbtn');
 addtaskbtn.addEventListener('click',addTask);
@@ -15,9 +14,10 @@ addtaskbtn.addEventListener('click',addTask);
 function addTask(e) {
 
 e.preventDefault();
-let taskadded = document.querySelector('input')
+let taskadded = document.getElementById('task')
 
 //  the user input is not empty then add the task to the array and add the task to the DOM
+    let taskvalue = taskadded.value;
     if (taskadded.value!== "") {
         tasks.push(taskadded.value);
         const item = document.createElement("p");
@@ -63,5 +63,10 @@ let taskadded = document.querySelector('input')
     }
 }
 
+console.log(tasks)
 
+for (let i = 0; i < tasks.length; i++) {
+    console.log(tasks[i]);
+}
+// code to creat a new sheet of tasks 
 
