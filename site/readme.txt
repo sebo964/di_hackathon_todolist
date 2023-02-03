@@ -35,3 +35,12 @@ form 1 for task submission
  
 form 2 that will contain the list of items 
 div with list of tasks as text content 
+
+JS 
+
+function to create new task function for add task button 
+
+function to delete task - delete button attached to task created 
+
+function to strike the task when completed, checkbox selected strike, unselected unstrike. 
+
