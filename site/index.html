@@ -12,17 +12,9 @@
 </head>
 
 <body>
-    <nav>This is for the navbar</nav>    
+    <nav>This is for the navbar
 
-    <form id="f1">
-        <label for="task">Add a task</label>
-        <input title='todoinput' type="text" id="task"></input>
-        <button type="submit" id="addtasksubmitbtn">Submit</button>
-    </form>
-    <Form id="f2">
-    <div class="listTasks"></div>
-
-            <div class="side-nav">
+        <div class="side-nav">
             <a href="#" class="logo">
                  <img src="./logo.png " class="logo-img">
                 <ul class="nav-links"></ul>
@@ -41,19 +33,49 @@
             </a>
             </li>
 
-            <li><a href="#">
+            <li>
+                <a href="#">
                 <i class="fa-solid fa-house-user"></i>
                 <p>About us</p>
-            </a>
+                </a>
             </li>
             </div>
 
             <div class="active"></div>
         
-    </div>
-    
-    >
+    </nav>    
 
+    <section id="big">
+            <Form id="sheetform">
+                <label id="sheetname">Sheet Name</label>
+                <input title='sheetnameinput' type="text" id="sheetname"></input>
+                <button type="submit" id="sheetnamesubmitbtn">create</button>
+                
+            </Form>
+            <h1>To Do List</h1>
+            <div id="container">
+
+            <form id="f1">
+                <label id="idtask">Add a task</label>
+                <input title='todoinput' type="text" id="task"></input>
+                <button type="submit" id="addtasksubmitbtn">Submit</button>
+            </form>
+
+            <Form id="f2">
+                <div id="listTasks"></div>
+            <!--elements of the to do list will go here  -->
+
+            </Form>
+            <form id="formbig">
+            <!-- group of to do list tasks will go in this section  -->
+
+
+            </form>
+
+
+
+    
+        </section>
 
 
     <script src="./script.js"></script>
