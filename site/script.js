@@ -21,7 +21,7 @@ let taskadded = document.querySelector('input')
     if (taskadded.value!== "") {
         tasks.push(taskadded.value);
         const item = document.createElement("p");
-        document.querySelector('div').appendChild(item);
+        document.getElementById('listTasks').appendChild(item);
 
         // adds a check box to the task on the left side
         const tick = document.createElement("input");
@@ -56,7 +56,7 @@ let taskadded = document.querySelector('input')
         // when the delete button is clicked the task is deleted from the dom
 
         del.addEventListener("click", () =>
-        document.querySelector('div').removeChild(li));
+        document.getElementById('listTasks').removeChild(item));
     }
     else {
         alert("task was not found");
