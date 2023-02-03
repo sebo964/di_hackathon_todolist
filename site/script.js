@@ -1,9 +1,10 @@
 // to do list app
 
-let tasks=[];  // list of items will be contained in this array 
+const tasks=[];  // list of items will be contained in this array 
 
-let completedtasks=[]; // list of completed tasks will be contained in this array
-console.log(tasks);
+// const form = document.getElementById('f1');
+// console.log(form);
+// form.addEventListener('submit',addTask); 
 
 const addtaskbtn = document.getElementById('addtasksubmitbtn');
 addtaskbtn.addEventListener('click',addTask);
@@ -14,14 +15,13 @@ addtaskbtn.addEventListener('click',addTask);
 function addTask(e) {
 
 e.preventDefault();
-let taskadded = document.getElementById('task')
+let taskadded = document.querySelector('input')
 
 //  the user input is not empty then add the task to the array and add the task to the DOM
-    let taskvalue = taskadded.value;
     if (taskadded.value!== "") {
         tasks.push(taskadded.value);
         const item = document.createElement("p");
-        document.getElementById('listTasks').appendChild(item);
+        document.querySelector('div').appendChild(item);
 
         // adds a check box to the task on the left side
         const tick = document.createElement("input");
@@ -56,17 +56,12 @@ let taskadded = document.getElementById('task')
         // when the delete button is clicked the task is deleted from the dom
 
         del.addEventListener("click", () =>
-        document.getElementById('listTasks').removeChild(item));
+        document.querySelector('div').removeChild(li));
     }
     else {
         alert("task was not found");
     }
 }
 
-console.log(tasks)
 
-for (let i = 0; i < tasks.length; i++) {
-    console.log(tasks[i]);
-}
-// code to creat a new sheet of tasks 
 
