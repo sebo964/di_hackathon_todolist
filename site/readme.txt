@@ -13,7 +13,7 @@ Min requirements
 resizable to do portal 
 input section to create a new task 
 Button to confirm submission 
-list of tasks with add, remove, stike (mark as complete)
+list of tasks with remove and stike (mark as complete)
 
 extra requirements 
 
