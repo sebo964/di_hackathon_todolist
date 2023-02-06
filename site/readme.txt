@@ -1,3 +1,11 @@
+documentation 
+
+https://docs.google.com/document/d/1zFYmIzHjEGbLjsNqe6lEnoC5c_OnpruMZjNAyuNR6xc/edit?usp=sharing
+
+final comments 
+
+only the min requirements were achieved. 
+
 This is the project requirement 
 Design a to do list 
 
